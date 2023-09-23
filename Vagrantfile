@@ -2,6 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
+  config.vm.boot_timeout = 600
   (0..2).each do |i|
     config.vm.define "controller-#{i}" do |node|
     
